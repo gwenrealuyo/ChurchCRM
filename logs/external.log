@@ -1,0 +1,12 @@
+[17-Jul-2021 12:08:21 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 12:08:21 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 12:09:03 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 12:09:03 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 12:39:09 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 12:39:09 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 13:18:31 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[17-Jul-2021 13:18:31 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[07-Aug-2021 12:28:30 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[07-Aug-2021 12:28:30 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[07-Aug-2021 12:29:37 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23
+[07-Aug-2021 12:29:37 Europe/Berlin] PHP Warning:  key_exists() expects parameter 2 to be array, null given in /Applications/XAMPP/xamppfiles/htdocs/churchcrm/ChurchCRM/Authentication/AuthenticationManager.php on line 23

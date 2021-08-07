@@ -1,0 +1,40 @@
+[2021-08-07T12:28:35.304291+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/setup/..//signatures.json [] {"url":"/churchcrm_setup/setup/SystemIntegrityCheck","remote_ip":"::1","correlation_id":"610e60534a605"}
+[2021-08-07T12:29:42.815384+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm/setup/..//signatures.json [] {"url":"/churchcrm/setup/SystemIntegrityCheck","remote_ip":"::1","correlation_id":"610e6096c712b"}
+[2021-08-07T12:30:09.554912+02:00] defaultLogger.ERROR: ERROR connecting to database at 'localhost' on port 'Unix socket' as user 'churchcrm' -  MySQL Error: 'Access denied for user 'churchcrm'@'localhost' (using password: YES)' [] {"url":"/churchcrm/","remote_ip":"::1","correlation_id":"610e60b1877ab"}
+[2021-08-07T12:32:32.617333+02:00] defaultLogger.ERROR: ERROR connecting to database at 'localhost' on port 'Unix socket' as user 'churchcrm' -  MySQL Error: 'Access denied for user 'churchcrm'@'localhost' (using password: NO)' [] {"url":"/churchcrm/","remote_ip":"::1","correlation_id":"610e614096b80"}
+[2021-08-07T12:33:14.642331+02:00] defaultLogger.ERROR: ERROR connecting to database at 'localhost' on port 'Unix socket' as user 'churchcrm' -  MySQL Error: 'Access denied for user 'churchcrm'@'localhost' (using password: NO)' [] {"url":"/churchcrm/","remote_ip":"::1","correlation_id":"610e616a9cd26"}
+[2021-08-07T12:35:37.462825+02:00] defaultLogger.INFO: Starting application integrity check [] {"url":"/churchcrm/api/background/timerjobs","remote_ip":"::1","correlation_id":"610e61f970ff1"}
+[2021-08-07T12:35:37.464424+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm/signatures.json [] {"url":"/churchcrm/api/background/timerjobs","remote_ip":"::1","correlation_id":"610e61f970ff1"}
+[2021-08-07T12:35:38.579298+02:00] defaultLogger.INFO: Application integrity check passed [] {"url":"/churchcrm/api/background/timerjobs","remote_ip":"::1","correlation_id":"610e61f970ff1"}
+[2021-08-07T12:37:19.616267+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/people","remote_ip":"::1","correlation_id":"610e625f96752"}
+[2021-08-07T12:37:23.069317+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=1","remote_ip":"::1","correlation_id":"610e626310ecb"}
+[2021-08-07T12:37:28.459527+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=3","remote_ip":"::1","correlation_id":"610e62687030d"}
+[2021-08-07T12:37:32.996298+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e626cf33d0"}
+[2021-08-07T12:38:02.845213+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/SystemSettings.php","remote_ip":"::1","correlation_id":"610e628ace5a5"}
+[2021-08-07T12:38:15.456685+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PeopleDashboard.php","remote_ip":"::1","correlation_id":"610e62976f7f2"}
+[2021-08-07T12:38:19.263737+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/people","remote_ip":"::1","correlation_id":"610e629b4063f"}
+[2021-08-07T12:38:21.866351+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e629dd383a"}
+[2021-08-07T12:39:13.693213+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e62d1a93e4"}
+[2021-08-07T12:39:24.834117+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/calendar","remote_ip":"::1","correlation_id":"610e62dccba4b"}
+[2021-08-07T12:43:59.805421+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/GroupList.php","remote_ip":"::1","correlation_id":"610e63efc4a35"}
+[2021-08-07T12:44:52.337547+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/sundayschool/SundaySchoolDashboard.php","remote_ip":"::1","correlation_id":"610e642452695"}
+[2021-08-07T12:45:49.545064+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PeopleDashboard.php","remote_ip":"::1","correlation_id":"610e645d85131"}
+[2021-08-07T12:46:24.377464+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PeopleDashboard.php","remote_ip":"::1","correlation_id":"610e64805c27f"}
+[2021-08-07T12:46:58.027872+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/sundayschool/SundaySchoolDashboard.php","remote_ip":"::1","correlation_id":"610e64a206cea"}
+[2021-08-07T12:47:47.589538+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/calendar","remote_ip":"::1","correlation_id":"610e64d38fee9"}
+[2021-08-07T12:47:55.173860+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/dashboard","remote_ip":"::1","correlation_id":"610e64db2a72b"}
+[2021-08-07T12:48:01.467873+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/people","remote_ip":"::1","correlation_id":"610e64e1723a7"}
+[2021-08-07T12:48:04.144816+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e64e4235b6"}
+[2021-08-07T12:48:14.772136+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e64eebc82e"}
+[2021-08-07T12:49:03.203149+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/NoteEditor.php?PersonID=2","remote_ip":"::1","correlation_id":"610e651f31996"}
+[2021-08-07T12:49:28.234869+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e65383957d"}
+[2021-08-07T12:53:34.730529+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/PersonView.php?PersonID=2","remote_ip":"::1","correlation_id":"610e662eb25a9"}
+[2021-08-07T12:53:52.472074+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/v2/calendar","remote_ip":"::1","correlation_id":"610e664073410"}
+[2021-08-07T12:53:56.049211+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/ListEvents.php","remote_ip":"::1","correlation_id":"610e66440c041"}
+[2021-08-07T12:53:59.221366+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/EditEventAttendees.php","remote_ip":"::1","correlation_id":"610e6647360bd"}
+[2021-08-07T12:54:02.282585+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/ListEvents.php","remote_ip":"::1","correlation_id":"610e664a44fdf"}
+[2021-08-07T12:54:04.304704+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/EventEditor.php","remote_ip":"::1","correlation_id":"610e664c4a646"}
+[2021-08-07T12:54:09.204849+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/ListEvents.php","remote_ip":"::1","correlation_id":"610e665132038"}
+[2021-08-07T12:54:10.340970+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/Checkin.php","remote_ip":"::1","correlation_id":"610e6652533ef"}
+[2021-08-07T12:54:15.076980+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/EventAttendance.php","remote_ip":"::1","correlation_id":"610e665712cba"}
+[2021-08-07T12:54:18.913414+02:00] defaultLogger.INFO: Next upgrade step for 4.4.3 is : 4.4.5 [] {"url":"/churchcrm/GroupList.php","remote_ip":"::1","correlation_id":"610e665adf00e"}

@@ -1,0 +1,3 @@
+[2021-07-17T12:08:26.646334+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm/setup/..//signatures.json [] {"url":"/churchcrm/setup/SystemIntegrityCheck","remote_ip":"::1","correlation_id":"60f2ac1a9ddc6"}
+[2021-07-17T12:39:14.922973+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm/setup/..//signatures.json [] {"url":"/churchcrm/setup/SystemIntegrityCheck","remote_ip":"::1","correlation_id":"60f2b352e157e"}
+[2021-07-17T13:18:36.820165+02:00] defaultLogger.INFO: Signature file found at: /Applications/XAMPP/xamppfiles/htdocs/churchcrm_setup/setup/..//signatures.json [] {"url":"/churchcrm_setup/setup/SystemIntegrityCheck","remote_ip":"::1","correlation_id":"60f2bc8cc83d2"}

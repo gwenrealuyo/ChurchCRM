@@ -468,14 +468,13 @@ if ($sAction == 'Create Event' && !empty($tyid)) {
     </td>
   </tr>
   <tr>
-    <td class="LabelColumn"><span style="color: red">*</span><?= gettext('Event Desc') ?>:</td>
+    <td class="LabelColumn"><?= gettext('Event Desc') ?>:</td>
     <td colspan="3" class="TextColumn">
-      <textarea name="EventDesc" rows="4" maxlength="100" class='form-control' required width="100%" style="width: 100%"><?= ($sEventDesc) ?></textarea>
+      <textarea name="EventDesc" rows="4" maxlength="100" class='form-control' width="100%" style="width: 100%"><?= ($sEventDesc) ?></textarea>
     </td>
   </tr>
   <tr>
-    <td class="LabelColumn"><span style="color: red">*</span>
-      <?= gettext('Date Range') ?>:
+    <td class="LabelColumn"><span style="color: red">*</span><?= gettext('Date Range') ?>:
     </td>
     <td class="TextColumn">
       <input type="text" name="EventDateRange" value=""

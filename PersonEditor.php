@@ -1167,7 +1167,7 @@ require 'Include/Header.php';
                 </div>
               <?php if (!SystemConfig::getBooleanValue('bHideFriendDate')) { /* Friend Date can be hidden - General Settings */ ?>
                 <div class="form-group col-md-3 col-lg-3">
-                  <label><?= gettext('Friend Date') ?>:</label>
+                  <label><?= gettext('First Attendance') ?>:</label>
                   <div class="input-group">
                     <div class="input-group-addon">
                       <i class="fa fa-calendar"></i>

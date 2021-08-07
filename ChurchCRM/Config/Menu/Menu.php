@@ -61,12 +61,12 @@ class Menu
         $peopleMenu = new MenuItem(gettext("People"), "", true, 'fa-users');
         $peopleMenu->addSubMenu(new MenuItem(gettext("Dashboard"), "PeopleDashboard.php"));
         $peopleMenu->addSubMenu(new MenuItem(gettext("Add New Person"), "PersonEditor.php", AuthenticationManager::GetCurrentUser()->isAddRecordsEnabled()));
-        $peopleMenu->addSubMenu(new MenuItem(gettext("View Active People"), "v2/people"));
-        $peopleMenu->addSubMenu(new MenuItem(gettext("View Inactive People"), "v2/people?familyActiveStatus=inactive"));
+        // $peopleMenu->addSubMenu(new MenuItem(gettext("View All People"), "v2/people"));
+        // $peopleMenu->addSubMenu(new MenuItem(gettext("View Inactive People"), "v2/people?familyActiveStatus=inactive"));
         $peopleMenu->addSubMenu(new MenuItem(gettext("View All People"), "v2/people?familyActiveStatus=all"));
         $peopleMenu->addSubMenu(new MenuItem(gettext("Add New Family"), "FamilyEditor.php", AuthenticationManager::GetCurrentUser()->isAddRecordsEnabled()));
-        $peopleMenu->addSubMenu(new MenuItem(gettext("View Active Families"), "v2/family"));
-        $peopleMenu->addSubMenu(new MenuItem(gettext("View Inactive Families"), "v2/family?mode=inactive"));
+        $peopleMenu->addSubMenu(new MenuItem(gettext("View All Families"), "v2/family"));
+        // $peopleMenu->addSubMenu(new MenuItem(gettext("View Inactive Families"), "v2/family?mode=inactive"));
         $adminMenu = new MenuItem(gettext("Admin"), "", AuthenticationManager::GetCurrentUser()->isAdmin());
         $adminMenu->addSubMenu(new MenuItem(gettext("Classifications Manager"), "OptionManager.php?mode=classes", AuthenticationManager::GetCurrentUser()->isAdmin()));
         $adminMenu->addSubMenu(new MenuItem(gettext("Family Roles"), "OptionManager.php?mode=famroles", AuthenticationManager::GetCurrentUser()->isAdmin()));
@@ -85,6 +85,7 @@ class Menu
     {
         $groupMenu = new MenuItem(gettext("Groups"), "", true, 'fa-tag');
         $groupMenu->addSubMenu(new MenuItem(gettext("List Groups"), "GroupList.php"));
+        $groupMenu->addSubMenu(new MenuItem(gettext("CYM Dashboard"), "GroupList.php"));
 
         $listOptions = ListOptionQuery::Create()->filterById(3)->orderByOptionSequence()->find();
 
@@ -114,7 +115,7 @@ class Menu
 
     private static function getSundaySchoolMenu()
     {
-        $sundaySchoolMenu = new MenuItem(gettext("Education"), "", SystemConfig::getBooleanValue("bEnabledSundaySchool"), 'fa-child');
+        $sundaySchoolMenu = new MenuItem(gettext("NCC"), "", SystemConfig::getBooleanValue("bEnabledSundaySchool"), 'fa-child');
         $sundaySchoolMenu->addSubMenu(new MenuItem(gettext("Dashboard"), "sundayschool/SundaySchoolDashboard.php"));
         // now we're searching the unclassified groups
         $tmpMenu = self::addGroupSubMenus(gettext("Classes"), 4, "sundayschool/SundaySchoolClassView.php?groupId=");

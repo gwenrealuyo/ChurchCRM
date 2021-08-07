@@ -176,7 +176,7 @@ $cSQL = 'SELECT COUNT(per_ID) AS cCount
                      WHERE t1.per_ID = t3.person_id AND t2.event_id = t3.event_id AND t3.event_id = '.$aEventID[$row].' AND per_cls_ID = 3';
             $gOpps = RunQuery($gSQL);
             $gNumGuestAttend = mysqli_fetch_row($gOpps)[0]; ?>
-               <input <?= ($gNumGuestAttend == 0 ? 'type="button"' : 'type="submit"') ?> name="Type" value="<?= gettext('Guests').' ['.$gNumGuestAttend.']' ?>" class="btn btn-default">
+               <input <?= ($gNumGuestAttend == 0 ? 'type="button"' : 'type="submit"') ?> name="Type" value="<?= gettext('Visitors').' ['.$gNumGuestAttend.']' ?>" class="btn btn-default">
              </form>
            </td>
          </tr>

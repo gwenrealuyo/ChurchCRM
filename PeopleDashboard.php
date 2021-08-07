@@ -90,13 +90,13 @@ if (SystemConfig::getBooleanValue("bEnableSelfRegistration")) {
   </div>
   <div class="box-body">
       <a href="<?= SystemURLs::getRootPath() ?>/v2/people" class="btn btn-app"><i class="fa fa-user"></i><?= gettext('All People') ?></a>
-      <a href="<?= SystemURLs::getRootPath() ?>/v2/people/verify" class="btn btn-app"><i class="fa fa-check-square-o"></i><?= gettext('Verify People') ?></a>
-      <div class="btn btn-app"><span class="badge <?=$selfRegColor?>"><?= $selfRegText?></span><i class="fa fa-user-plus"></i><?= gettext('Self Register') ?></div>
+      <!-- <a href="<?= SystemURLs::getRootPath() ?>/v2/people/verify" class="btn btn-app"><i class="fa fa-check-square-o"></i><?= gettext('Verify People') ?></a> -->
+      <!-- <div class="btn btn-app"><span class="badge <?=$selfRegColor?>"><?= $selfRegText?></span><i class="fa fa-user-plus"></i><?= gettext('Self Register') ?></div> -->
       <a href="<?= SystemURLs::getRootPath()?>/v2/family" class="btn btn-app"><i class="fa fa-users"></i><?= gettext('All Families') ?></a>
       <br/>
-      <a href="MapUsingGoogle.php?GroupID=-1" class="btn btn-app"><i class="fa fa-map"></i><?= gettext('Family Map') ?></a>
-      <a href="GeoPage.php" class="btn btn-app"><i class="fa fa-globe"></i><?= gettext('Family Geographic') ?></a>
-      <a href="UpdateAllLatLon.php" class="btn btn-app"><i class="fa fa-map-pin"></i><?= gettext('Update All Family Coordinates') ?></a>
+      <!-- <a href="MapUsingGoogle.php?GroupID=-1" class="btn btn-app"><i class="fa fa-map"></i><?= gettext('Family Map') ?></a> -->
+      <!-- <a href="GeoPage.php" class="btn btn-app"><i class="fa fa-globe"></i><?= gettext('Family Geographic') ?></a> -->
+      <!-- <a href="UpdateAllLatLon.php" class="btn btn-app"><i class="fa fa-map-pin"></i><?= gettext('Update All Family Coordinates') ?></a> -->
       <br/>
 
       <?php

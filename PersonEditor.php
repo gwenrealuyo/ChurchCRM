@@ -765,12 +765,6 @@ require 'Include/Header.php';
         ?><span style="color: red;"><?php echo $sBirthDateError ?></span><?php
     } ?>
                     </div>
-                    <div class="col-md-2">
-                        <label><?= gettext('Hide Age') ?></label><br/>
-                        <input type="checkbox" name="HideAge" value="1" <?php if ($bHideAge) {
-        echo ' checked';
-    } ?> />
-                    </div>
                 </div>
             </div>
         </div>
@@ -887,7 +881,7 @@ require 'Include/Header.php';
             echo '<span style="color: red;">';
         }
 
-        echo gettext('State').':';
+        echo gettext('Region').':';
 
         if ($bFamilyState) {
             echo '</span>';

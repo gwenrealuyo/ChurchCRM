@@ -46,12 +46,6 @@ $ParentsEmails = [];
 $thisClassChildren = $sundaySchoolService->getKidsFullDetails($iGroupId);
 
 foreach ($thisClassChildren as $child) {
-    if ($child['dadEmail'] != '') {
-        array_push($ParentsEmails, $child['dadEmail']);
-    }
-    if ($child['momEmail'] != '') {
-        array_push($ParentsEmails, $child['momEmail']);
-    }
     if ($child['kidEmail'] != '') {
         array_push($KidsEmails, $child['kidEmail']);
     }
@@ -206,14 +200,7 @@ require '../Include/Header.php';
         <th><?= gettext('Age') ?></th>
         <th><?= gettext('Email') ?></th>
         <th><?= gettext('Mobile') ?></th>
-        <th><?= gettext('Home Phone') ?></th>
         <th><?= gettext('Home Address') ?></th>
-        <th><?= gettext('Dad Name') ?></th>
-        <th><?= gettext('Dad Mobile') ?></th>
-        <th><?= gettext('Dad Email') ?></th>
-        <th><?= gettext('Mom Name') ?></th>
-        <th><?= gettext('Mom Mobile') ?></th>
-        <th><?= gettext('Mom Email') ?></th>
       </tr>
       </thead>
       <tbody>
@@ -232,14 +219,7 @@ require '../Include/Header.php';
           <td><?= MiscUtils::FormatAge($child['birthMonth'], $child['birthDay'], $child['birthYear'], $child['flags']) ?></td>
           <td><?= $child['kidEmail'] ?></td>
           <td><?= $child['mobilePhone'] ?></td>
-          <td><?= $child['homePhone'] ?></td>
           <td><?= $child['Address1'].' '.$child['Address2'].' '.$child['city'].' '.$child['state'].' '.$child['zip'] ?></td>
-          <td><a href='<?= SystemURLs::getRootPath(); ?>/PersonView.php?PersonID=<?= $child['dadId'] ?>'><?= $child['dadFirstName'].' '.$child['dadLastName'] ?></a></td>
-          <td><?= $child['dadCellPhone'] ?></td>
-          <td><?= $child['dadEmail'] ?></td>
-          <td><a href='<?= SystemURLs::getRootPath(); ?>/PersonView.php?PersonID=<?= $child['momId'] ?>'><?= $child['momFirstName'].' '.$child['momLastName'] ?></td>
-          <td><?= $child['momCellPhone'] ?></td>
-          <td><?= $child['momEmail'] ?></td>
           </tr>
 
       <?php
@@ -285,11 +265,6 @@ function implodeUnique($array, $withQuotes)
             <label><?= gettext('Kids Emails') ?></label>
             <input name="email_to" class="form-control email-recepients-kids"
                    value="<?= implodeUnique($KidsEmails, false) ?>">
-          </div>
-          <div class="form-group">
-            <label><?= gettext('Parents Emails') ?></label>
-            <input name="email_to_2" class="form-control email-recepients-parents"
-                   value="<?= implodeUnique($ParentsEmails, false) ?>">
           </div>
           <div class="form-group">
             <label><?= gettext('Teachers Emails') ?></label>

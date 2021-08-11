@@ -89,12 +89,7 @@ $mailchimp = new MailChimpService();
                         <a class="btn btn-app bg-olive"
                            href="<?= SystemURLs::getRootPath() ?>/PersonEditor.php?FamilyID=<?=$family->getId()?>"><i
                                 class="fa fa-plus-square"></i> <?= gettext('Add New Member') ?></a>
-
-                        <?php if (AuthenticationManager::GetCurrentUser()->isEditRecordsEnabled()) { ?>
-                            <button class="btn btn-app bg-orange" id="activateDeactivate">
-                                <i class="fa <?= (empty($family->isActive()) ? 'fa-times-circle-o' : 'fa-check-circle-o') ?> "></i><?php echo(($family->isActive() ? _('Deactivate') : _('Activate')) . _(' this Family')); ?>
-                            </button>
-                        <?php }
+                        <?php 
                         if (AuthenticationManager::GetCurrentUser()->isDeleteRecordsEnabled()) {
                             ?>
                             <a class="btn btn-app bg-maroon"

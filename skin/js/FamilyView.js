@@ -249,33 +249,6 @@ $(document).ready(function () {
     });
 
 
-    $("#activateDeactivate").click(function () {
-        popupTitle = (window.CRM.currentActive == true ? i18next.t('Confirm Deactivation') : i18next.t("Confirm Activation" ));
-        if (window.CRM.currentActive == true) {
-            popupMessage = i18next.t("Please confirm deactivation of family") +  ': '  + window.CRM.currentFamilyName;
-        }
-        else {
-            popupMessage = i18next.t('Please confirm activation of family') + ': ' + window.CRM.currentFamilyName;
-        }
-
-        bootbox.confirm({
-            title: popupTitle,
-            message: '<p style="color: red">' + popupMessage + '</p>',
-            callback: function (result) {
-                if (result) {
-                    window.CRM.APIRequest({
-                        method: "POST",
-                        path: "families/" + window.CRM.currentFamily + "/activate/" + !window.CRM.currentActive
-                    }).done(function (data) {
-                        if (data.success == true) {
-                            window.location.href = window.CRM.root + "/v2/family/" + window.CRM.currentFamily;
-                        }
-                    });
-                }
-            }
-        });
-    });
-
     $("#ShowPledges").click(function () {
         updateUserSetting("finance.show.pledges", $("#ShowPledges").prop("checked") ? "true" : "false");
     });

@@ -145,25 +145,12 @@ if (!$CheckoutOrDelete &&  $EventID > 0) {
                             </div>
                             <div id="childDetails" class="col-sm-5 text-center"></div>
                         </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="adult"
-                                   class="col-sm-2 control-label"><?= gettext('Adult Name(Optional)') ?></label>
-                            <div class="col-sm-5 inputGroupContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="adult"
-                                           placeholder="<?= gettext('Checked in By(Optional)'); ?>" tabindex=2>
-                                </div>
-                            </div>
-                            <div id="adultDetails" class="col-sm-5 text-center"></div>
-                        </div>
 
                         <div class="form-group row">
 
                             <div class="box-footer text-center col-md-4  col-xs-8">
                                 <input type="submit" class="btn btn-primary" value="<?= gettext('CheckIn'); ?>"
-                                       name="CheckIn" tabindex=3>
+                                       name="CheckIn" tabindex=3 id="checkin">
                                 <input type="reset" class="btn btn-default" value="<?= gettext('Cancel'); ?>"
                                        name="Cancel" tabindex=4 onClick="SetPersonHtml($('#childDetails'),null);SetPersonHtml($('#adultDetails'),null);">
                             </div>
@@ -310,9 +297,6 @@ if (isset($_POST['EventID'])) {
                 <tr>
                     <th><?= gettext('Name') ?></th>
                     <th><?= gettext('Checked In Time') ?></th>
-                    <th><?= gettext('Checked In By') ?></th>
-                    <th><?= gettext('Checked Out Time') ?></th>
-                    <th><?= gettext('Checked Out By') ?></th>
                     <th nowrap><?= gettext('Action') ?></th>
                 </tr>
                 </thead>
@@ -351,28 +335,27 @@ if (isset($_POST['EventID'])) {
                                  class="direct-chat-img initials-image">&nbsp
                             <a href="PersonView.php?PersonID=<?= $per->getPersonId() ?>"><?= $sPerson ?></a></td>
                         <td><?= date_format($per->getCheckinDate(), SystemConfig::getValue('sDateTimeFormat')) ?></td>
-                        <td><?= $sCheckinby ?></td>
-                        <td><?= date_format($per->getCheckoutDate(), SystemConfig::getValue('sDateTimeFormat')) ?></td>
-                        <td><?= $sCheckoutby ?></td>
 
                         <td align="center">
                             <form method="POST" action="Checkin.php" name="DeletePersonFromEvent">
                                 <input type="hidden" name="child-id" value="<?= $per->getPersonId() ?>">
                                 <input type="hidden" name="EventID" value="<?= $EventID ?>">
                                 <?php
-                                if (!$per->getCheckoutDate()) {
-                                    ?>
-                                    <input class="btn btn-primary btn-sm" type="submit" name="CheckOutBtn"
-                                           value="<?= gettext('CheckOut') ?>">
-                                    <input class="btn btn-danger btn-xs" type="submit" name="DeleteBtn"
-                                           value="<?= gettext('Delete') ?>">
+                                // if (!$per->getCheckoutDate()) {
+                                    // ?>
+                                    <!-- <input class="btn btn-primary btn-sm" type="submit" name="CheckOutBtn" id="checkout" -->
+                                           <!-- value="<?= gettext('CheckOut') ?>"> -->
+                                    <!-- <input class="btn btn-danger btn-xs" type="submit" name="DeleteBtn" -->
+                                           <!-- value="<?= gettext('Delete') ?>"> -->
 
                                     <?php
-                                } else {
+                                // } else {
                                     ?>
-                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-check-circle"></i> | 
+                                    <input class="btn btn-danger btn-xs" type="submit" name="DeleteBtn"
+                                           value="<?= gettext('Delete') ?>">
                                     <?php
-                                } ?>
+                                // } ?>
                             </form>
                         </td>
                     </tr>
@@ -418,6 +401,12 @@ if (isset($_POST['EventID'])) {
                 $('[id=' + event.target.id + '-id]').val(ui.item.obj.objid);
                 SetPersonHtml($('#' + event.target.id + 'Details'),ui.item.obj);
                 return false;
+            }
+        });
+        $input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("checkin").click();
             }
         });
 
